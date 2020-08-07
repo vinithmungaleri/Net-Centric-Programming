@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+<head>
+<title> Q4 </title>
+</head>
+<body style="background-color:white"> 
+<h3 style="text-align:center; black"> Program to generate the Fibonacci Series </h3>
+<script type="text/javascript">
+
+ function fibonacci(num) 
+{ 
+    var num1=0; 
+    var num2=1; 
+    document.write("",num1," ");
+    document.write("",num2," ");
+    var sum; 
+    var i=0; 
+    for (i = 2; i < num; i++)  
+    { 
+        sum=num1+num2; 
+        document.write("",sum," ");
+        num1=num2; 
+        num2=sum; 
+    } 
+    return num2; 
+} 
+var num = prompt("Enter a number to generate the fibonacci series:", " ");
+
+document.write("The number entered to generate the fibonacci series is: ",num, "<br/>");
+document.write("The fibonacci series : ");
+
+  document.write("fibonacci(num): "+fibonacci(num)+"<br>");  
+
+
+
+</script>
+</body>
+</html>
